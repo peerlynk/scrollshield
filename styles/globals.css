@@ -97,3 +97,23 @@ input:focus-visible {
   outline: 2px solid #91A989;
   outline-offset: 2px;
 }
+
+/* Hide Netlify injected badge, drawer, and promotional widgets */
+#netlify-drawer,
+#netlify-badge,
+.netlify-badge,
+[data-netlify-drawer],
+[id*="netlify"],
+[class*="netlify-drawer"],
+iframe[id*="netlify"],
+iframe[src*="netlify"],
+div[data-netlify-identity-menu],
+.netlify-identity-button {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+}
+
