@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #080806;
+  --bg-secondary: #0D0D09;
+  --surface-primary: #171611;
+  --surface-secondary: #201E18;
+  --surface-raised: #29261F;
+  --text-primary: #F4F1E8;
+  --text-secondary: #AAA69A;
+  --text-muted: #777269;
+  --border-subtle: #353229;
+  --color-sage: #91A989;
+  --color-sand: #E0C99E;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  background-color: #080806;
+  color: #F4F1E8;
+}
+
+body {
+  font-family: var(--font-geist-sans), Inter, system-ui, -apple-system, sans-serif;
+  background-color: #080806;
+  color: #F4F1E8;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom selection */
+::selection {
+  background-color: rgba(145, 169, 137, 0.3);
+  color: #F4F1E8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080806;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #201E18;
+  border-radius: 4px;
+  border: 1px solid #353229;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #29261F;
+}
+
+/* Reusable Gradient Text Utilities */
+.text-gradient-brand {
+  background: linear-gradient(135deg, #F4F1E8 0%, #91A989 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-sage {
+  background: linear-gradient(135deg, #B4C7AE 0%, #91A989 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-sand {
+  background: linear-gradient(135deg, #F4F1E8 0%, #E0C99E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(23, 22, 17, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(53, 50, 41, 0.6);
+}
+
+.glass-navbar {
+  background: rgba(8, 8, 6, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(53, 50, 41, 0.5);
+}
+
+/* Focus visible styling */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid #91A989;
+  outline-offset: 2px;
+}
