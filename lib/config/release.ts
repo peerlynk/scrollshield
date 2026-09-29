@@ -28,7 +28,7 @@ export const SCROLLSHIELD_RELEASE: ReleaseConfig = {
   apkSha256: 'ce20f3817e0fe41cca9dc737cbc67dc6700552e97b781299e5b15858a0f17149',
   releaseDate: 'September 2026',
   playStoreUrl: 'https://play.google.com/store/apps/details?id=com.scrollshield.peerlynk',
-  playStoreState: 'COMING_SOON',
+  playStoreState: 'LIVE',
   minimumAndroidVersion: 'Android 8.0 (API level 26)',
   signingCertificateSha256: '4C:8A:2F:90:7E:11:3D:89:A6:22:50:BE:F4:71:D0:89:01:23:45:67:89:AB:CD:EF:01:23:45:67:89:AB:CD:EF',
   officialDomain: 'https://scrollshield.peerlynk.com',
