@@ -4,6 +4,8 @@ import '@/styles/globals.css';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { MobileStickyCTA } from '@/components/ui/MobileStickyCTA';
+import { SmoothScrollProvider } from '@/components/ui/SmoothScrollProvider';
+import { ScrollProgress } from '@/components/ui/ScrollProgress';
 import { SCROLLSHIELD_RELEASE, PLAY_STORE } from '@/lib/config/release';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-geist-sans' });
@@ -104,11 +106,14 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-bg-primary text-text-primary antialiased min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <MobileStickyCTA />
-        <Footer />
+      <body className="bg-bg-primary text-text-primary antialiased min-h-screen flex flex-col overflow-x-hidden">
+        <SmoothScrollProvider>
+          <ScrollProgress />
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <MobileStickyCTA />
+          <Footer />
+        </SmoothScrollProvider>
       </body>
     </html>
   );

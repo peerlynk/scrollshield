@@ -1,16 +1,16 @@
 import React from 'react';
 import { HeroSection } from '@/components/sections/Hero';
 import { TrustStrip } from '@/components/sections/TrustStrip';
-import { ProblemSection } from '@/components/sections/ProblemSection';
-import { HowItWorksSection } from '@/components/sections/HowItWorks';
-import { ScrollDemoSection } from '@/components/sections/ScrollDemo';
-import { MilestoneTimelineSection } from '@/components/sections/MilestoneTimeline';
-import { AgeAwareGuardianSection } from '@/components/sections/AgeAwareGuardian';
+import { EndlessFeedStory } from '@/components/sections/EndlessFeedStory';
+import { PinnedPhoneStory } from '@/components/sections/PinnedPhoneStory';
+import { ScrollClassificationDemo } from '@/components/sections/ScrollClassificationDemo';
+import { MilestoneScrub } from '@/components/sections/MilestoneScrub';
+import { StackedGuardianCards } from '@/components/sections/StackedGuardianCards';
 import { FeatureGridSection } from '@/components/sections/FeatureGrid';
 import { FloatingCounterSection } from '@/components/sections/FloatingCounterSection';
 import { WidgetSection } from '@/components/sections/WidgetSection';
 import { InsightsSection } from '@/components/sections/InsightsSection';
-import { PrivacySection } from '@/components/sections/PrivacySection';
+import { PrivacyCollapseSection } from '@/components/sections/PrivacyCollapseSection';
 import { ScreenshotGallerySection } from '@/components/sections/ScreenshotGallery';
 import { DownloadChoiceSection } from '@/components/sections/DownloadChoice';
 import { FAQPreviewSection } from '@/components/sections/FAQPreview';
@@ -19,52 +19,52 @@ import { FinalCTASection } from '@/components/sections/FinalCTA';
 export default function HomePage() {
   return (
     <>
-      {/* 2. Hero */}
+      {/* 1. Hero with Attention Stream & 3D Parallax Tilt */}
       <HeroSection />
 
-      {/* 3. Trust Strip */}
+      {/* 2. Trust Strip */}
       <TrustStrip />
 
-      {/* 4. Problem Statement */}
-      <ProblemSection />
+      {/* 3. Pinned Endless Feed Horizontal Scroll Story */}
+      <EndlessFeedStory />
 
-      {/* 5. How ScrollShield Works */}
-      <HowItWorksSection />
+      {/* 4. Pinned Phone Product Storytelling */}
+      <PinnedPhoneStory />
 
-      {/* 6. Gesture Classification Demo */}
-      <ScrollDemoSection />
+      {/* 5. Gesture Classification Logic Demo */}
+      <ScrollClassificationDemo />
 
-      {/* 7. Milestone Timeline */}
-      <MilestoneTimelineSection />
+      {/* 6. Milestone Scrub Timeline */}
+      <MilestoneScrub />
 
-      {/* 8. Age-Aware Guardian */}
-      <AgeAwareGuardianSection />
+      {/* 7. Stacked Guardian Cards Scroll Effect */}
+      <StackedGuardianCards />
 
-      {/* 9. Feature Grid */}
+      {/* 8. Feature Grid */}
       <FeatureGridSection />
 
-      {/* 10. Floating Counter */}
+      {/* 9. Floating Counter */}
       <FloatingCounterSection />
 
-      {/* 11. Widget */}
+      {/* 10. Home Widget */}
       <WidgetSection />
 
-      {/* 12. Local Insights */}
+      {/* 11. Local Insights */}
       <InsightsSection />
 
-      {/* 13. Privacy */}
-      <PrivacySection />
+      {/* 12. Local Privacy Sealing Boundary */}
+      <PrivacyCollapseSection />
 
-      {/* 14. Screenshots */}
+      {/* 13. Screenshot Gallery */}
       <ScreenshotGallerySection />
 
-      {/* 15. Download */}
+      {/* 14. Download Hub */}
       <DownloadChoiceSection />
 
-      {/* 16. FAQ Preview */}
+      {/* 15. FAQ Preview */}
       <FAQPreviewSection />
 
-      {/* 17. Final CTA */}
+      {/* 16. Final CTA */}
       <FinalCTASection />
     </>
   );
