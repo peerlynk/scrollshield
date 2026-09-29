@@ -41,7 +41,7 @@ export function MilestoneScrub() {
           trigger: `#milestone-node-${m.count}`,
           start: 'top center+=50',
           end: 'bottom center',
-          toggleClass: { targets: `#milestone-node-${m.count}`, className: 'scale-110 border-opacity-100' },
+          toggleClass: { targets: `#milestone-node-${m.count}`, className: 'active-milestone' },
         });
       });
     }, containerRef);

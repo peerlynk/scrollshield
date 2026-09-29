@@ -117,3 +117,10 @@ div[data-netlify-identity-menu],
   width: 0 !important;
 }
 
+/* Active Milestone Node Highlight */
+.active-milestone {
+  transform: scale(1.08);
+  border-opacity: 1 !important;
+}
+
+
